@@ -1,9 +1,35 @@
+"""
+Script for downloading JavaScript libraries referenced in the HTML of a given URL.
+
+Usage:
+    - Define the function `download_js_libraries(url, save_directory)` to retrieve the HTML content
+      from the specified URL, parse it using BeautifulSoup to find all script tags with a 'src' attribute,
+      download each JavaScript library referenced by these tags, and save them to the specified directory.
+    - Set the `target_url` variable to specify the URL from which to download JavaScript libraries.
+    - Set the `save_directory` variable to specify the directory where the downloaded JavaScript files will be saved.
+
+Requirements:
+    - requests library: `pip install requests`
+    - BeautifulSoup library: `pip install beautifulsoup4`
+
+Note:
+    - This script requires internet connectivity to download JavaScript libraries from remote URLs.
+    - It uses requests to make HTTP requests and BeautifulSoup for HTML parsing.
+"""
+
 import os
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin, urlparse
 
 def download_js_libraries(url, save_directory):
+    """
+    Downloads JavaScript libraries referenced in the HTML of a given URL.
+
+    Args:
+        url (str): The URL of the webpage where JavaScript libraries are referenced.
+        save_directory (str): The directory path where downloaded JavaScript files will be saved.
+    """
     # Make a request to the target URL
     response = requests.get(url)
 

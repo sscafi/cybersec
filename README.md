@@ -90,3 +90,13 @@ Note:
 
 """
 
+
+ Radio Frequency Scanner:   
+
+This script generates and processes a synthetic radio frequency (RF) signal
+spanning a wide range of frequencies. It simulates the capture and analysis
+of RF signals using Python, without the need for actual hardware like an
+RTL-SDR dongle. The script generates a composite signal containing multiple
+sinusoidal components and adds Gaussian noise to simulate a real-world scenario.
+The signal is then visualized in both time and frequency domains, and peaks
+in the frequency spectrum are detected and annotated.

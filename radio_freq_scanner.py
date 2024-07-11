@@ -17,8 +17,8 @@ Dependencies:
 Install the necessary libraries using:
 pip install numpy matplotlib scipy
 
-Author: [Your Name]
-License: [Choose a license, e.g., MIT]
+Author: Saher Scafi
+License: MIT
 
 Parameters:
 fs : float

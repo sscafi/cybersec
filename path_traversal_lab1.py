@@ -1,4 +1,4 @@
-# Lab 1 - File Path Traversal , Simple Case
+# Lab 1 - File Path Traversal , Simple Case.
 # Targfet Goal - Retrieve the contents of the /etcs/passwd file
 # Analysis:
 # /var/www/images/65.jpg
